@@ -1,6 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8492983&assignment_repo_type=AssignmentRepo)
 # Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+O FinanKids veio com ituito de ajudar na organizacao de suas economias, assim proporcionando as criancas, adolescente e jovens a tera uma educacao financeira logo cedo.
 
 ## Alunos integrantes da equipe
 
@@ -12,8 +12,8 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Roberto Felipe Dias Ferreira Da Rocha
+* Rommel Vieira Carneiro
 
 ## Instruções de utilização
 
