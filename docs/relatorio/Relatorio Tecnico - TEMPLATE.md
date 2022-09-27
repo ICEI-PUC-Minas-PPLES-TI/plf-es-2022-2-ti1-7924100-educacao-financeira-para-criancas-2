@@ -5,17 +5,17 @@ FinanKids
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Engenharia de Software
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+Scrum Master: Pedro Henrique Moreira Caixeta Ferreira
+Product Owner: Hugo Viana Tinoco
+Equipe de Desenvolvimento
+Petrius Arturo Paglioni (Desenvolvedor Front End)
+Gustavo Menezes Barbosa (Desenvolvedor Back End)
+Hugo Viana Tinoco (Analista de Negócios)
+Enzo de Paiva Rezende (Designer)
 
 # Estrutura do Documento
 
@@ -56,7 +56,7 @@ FinanKids
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O problema principal que pretendemos resolver é o de descontrole financeiro, falta de planejamento ou simplesmente saber lidar com o dinheiro de maneira geral. Uma criança, um adolescente descontrolado financeiramente, se torna adulto descontrolado, cheio de dívidas, sem sucesso e prosperidade. Visto que o endividamento dos brasileiros atingiu em março a máxima histórica  para o  mês, de 77,5%, a maior proporção já registrada nos 12 anos do levantamento. Segundo a Pesquisa de Endividamento e Inadimplência do Consumidor.
 
 > Nesse momento você deve apresentar o problema que a sua aplicação deve
 > resolver. No entanto, não é a hora de comentar sobre a aplicação.
@@ -76,7 +76,7 @@ FinanKids
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O que queremos com nosso projeto é mudar o mundo, mas devemos começar pequeno. Focando em crianças e adolescentes, que são o futuro de tudo. Através do nosso projeto iremos auxiliar pais, familiares e a escola a educar a criança financeiramente. Os pais poderão juntamente com a criança ter um controle do quanto de “mesada” a criança terá, dos gastos que ela vai ter. Dessa forma a criança crescerá sabendo dos seus limites, sabendo onde gastar seu dinheiro e como guardar e investir.
 
 > Aqui você deve descrever os objetivos do trabalho indicando que o
 > objetivo geral é desenvolver um software para solucionar o problema
@@ -89,7 +89,7 @@ FinanKids
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O motivo desta escolha foi por conta da necessidade das criancas de hoje em hoje em obter uma educacao financeira logo cedo assim, ajudando cada vez mais a cronstrucao do futuro das mesmas. Foi aprofundado na questao de entrada e saida de dinheiro, colocando tambem o acesso a mercado de acoes e aulas de como investir de forma correta o dinheiro.
 
 > Descreva a importância ou a motivação para trabalhar com esta aplicação
 > que você escolheu. Indique as razões pelas quais você escolheu seus
@@ -105,7 +105,7 @@ FinanKids
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Educadores para ajudar nas aulas e transparecer as mentes das criancas e dos jovens, pais na hora de educar e realizar investimentos, criancas , adolescentes e jovens sao os protagonistas, eles iram construir seus futuros com esses ensinamentos.
 
 > Descreva quem serão as pessoas que usarão a sua aplicação indicando os
 > diferentes perfis. O objetivo aqui não é definir quem serão os
@@ -124,7 +124,7 @@ FinanKids
  
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
+No projeto 
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
