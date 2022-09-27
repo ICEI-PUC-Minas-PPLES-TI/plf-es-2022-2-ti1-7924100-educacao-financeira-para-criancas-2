@@ -124,15 +124,17 @@ Educadores para ajudar nas aulas e transparecer as mentes das criancas e dos jov
  
 # Especificações do Projeto
 
-No projeto 
+No projeto tera um formato com tela de login onde apos logar tera uma tela mostrando as receitas, as despesas e o saldo, logo apos o usuario tem a possiblidade de alterar qualquer informacao de login. Tera uma tela de adicionar uma categoria de entrada ou saida de dinheiro, logo apos uma tela de conta onde se ira especificar se e receita ou despesas e colocar a categoria, tera uma tela de lancamentos onde se ira colocar a conta e o valor. Para completar uma tela de noticias de como investir melhor seu dinheiro e um tela com as melhores acoes para se investir
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
 > realizar a especificações do projeto
 
-## Personas e Mapas de Empatia
+## Personas
 
-......  COLOQUE AQUI O SEU TEXTO ......
+[Persona 1](../persona1.png)
+[Persona 2](../persona2.png)
+[Persona 3](../persona3png)
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
@@ -164,7 +166,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
+|Usuário do sistema  | Registrar minhas entradas          | Colocar o que entra de dinheiro        |
+|Usuário do sistema  | Registrar meus gastos              | Controlar gastos                       |
+|Usuário do sistema  | Registrar categoria de gastos      | Listar cada categoria de gastos        |
+|Usuário do sistema  | Registrar um perfil                | Realizar o cadastro de login e senha   |
+|Usuário do sistema  | Alterar um perfil                  | Alterar os dados de login e senha      |
+|Usuário do sistema  | Registrar lancamentos              | Lancar os valores das receitas ou despesas|
+|Usuário do sistema  | Mercado de acoes                   | Visualizar o mercado de acoes          |
+|Usuário do sistema  | Noticias                           | Visualizar noticias sobre economia     |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 > Apresente aqui as histórias de usuário que são relevantes para o
