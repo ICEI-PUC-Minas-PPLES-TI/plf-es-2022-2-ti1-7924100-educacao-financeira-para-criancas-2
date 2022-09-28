@@ -130,9 +130,11 @@ No projeto tera um formato com tela de login onde apos logar tera uma tela mostr
 
 ## Personas
 
-[Persona 1](/./persona1.png)
-[Persona 2](/./persona2.png)
-[Persona 3](/./persona3png)
+![Persona 1](/./persona1.png)
+
+![Persona 2](/./persona2.png)
+
+![Persona 3](/./persona3png)
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
@@ -260,13 +262,21 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 # Projeto de Interface
 
 Tela de cadastro
+
 Tela de Login
+
 Tela de Perfil
+
 Tela de menu
+
 Tela de categoria
+
 Tela de lancamentos
+
 Tela de conta
+
 Tela de acoes
+
 Tela de noticias
 
 
@@ -277,7 +287,7 @@ Tela de noticias
 
 ## User Flow
 
-......  INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
+![Flow](/./flow.png)
 
 > Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
 > mapear todo fluxo de telas do site ou app. Essa técnica funciona
@@ -296,15 +306,23 @@ Tela de noticias
 
 ## Wireframes
 
-[Tela de cadastro](/./registrar.png)
-[Tela de Login](/./login.png)
-[Tela de Perfil](/./perfil.png)
-[Tela de menu](/./menu.png)
-[Tela de categoria](/./categoria.png)
-[Tela de lancamentos](/./lancamentos.png)
-[Tela de conta](/./conta.png)
-[Tela de acoes](/./acoes.png)
-[Tela de noticias](/./noticias.png)
+![Tela de cadastro](/./registrar.png)
+
+![Tela de Login](/./login.png)
+
+![Tela de Perfil](/./perfil.png)
+
+![Tela de menu](/./menu.png)
+
+![Tela de categoria](/./categoria.png)
+
+![Tela de lancamentos](/./lancamentos.png)
+
+![Tela de conta](/./conta.png)
+
+![Tela de acoes](/./acoes.png)
+
+![Tela de noticias](/./noticias.png)
 
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
@@ -326,9 +344,13 @@ Tela de noticias
 # Metodologia
 
 Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentacao do github, wireframes, miro
+
 Hugo Viana Tinoco - Cuidou dos Slides e ajudou na parte do design thinking
-Petrius Arturo Paglioni - Cuidou da parte de documentacao 
+
+Petrius Arturo Paglioni - Cuidou da parte de documentacao
+
 Gustavo Menezes Barbosa - Opinioes no trabalho
+
 Enzo de Paiva Rezende - Opinioes no trabalho
 
 > Nesta parte do documento, você deve apresentar a metodologia 
@@ -350,11 +372,17 @@ Enzo de Paiva Rezende - Opinioes no trabalho
 ## Divisão de Papéis
 
 Scrum Master: Pedro Henrique Moreira Caixeta Ferreira
+
 Product Owner: Hugo Viana Tinoco
+
 Equipe de Desenvolvimento
+
 Petrius Arturo Paglioni (Desenvolvedor Front End)
+
 Gustavo Menezes Barbosa (Desenvolvedor Back End)
+
 Hugo Viana Tinoco (Analista de Negócios)
+
 Enzo de Paiva Rezende (Designer)
 
 > Apresente a divisão de papéis e tarefas entre os membros do grupo.
@@ -370,7 +398,7 @@ Enzo de Paiva Rezende (Designer)
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
 |Processo de Design Thinkgin  | Miro |  [https://miro.com/XXXXXXX](https://miro.com/app/board/uXjVPTfmQrc=/) | 
-|Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas 2)|
+|Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas2)|
 |Protótipo Interativo | Figma | [https://figma.com/XXXXXXX](https://www.figma.com/file/MLijQbElQhOrrk2fLrZyPj/Projeto-TIAW-Educa%C3%A7%C3%A3o-Financeira?node-id=0%3A1) | 
 
 >
