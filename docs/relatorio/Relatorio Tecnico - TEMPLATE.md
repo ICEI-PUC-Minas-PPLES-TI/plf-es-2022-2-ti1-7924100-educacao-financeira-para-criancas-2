@@ -130,9 +130,9 @@ No projeto tera um formato com tela de login onde apos logar tera uma tela mostr
 
 ## Personas
 
-[Persona 1](../persona1.png)
-[Persona 2](../persona2.png)
-[Persona 3](../persona3png)
+[Persona 1](/./persona1.png)
+[Persona 2](/./persona2.png)
+[Persona 3](/./persona3png)
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
@@ -296,15 +296,15 @@ Tela de noticias
 
 ## Wireframes
 
-[Tela de cadastro](../registrar.png)
-[Tela de Login](../login.png)
-[Tela de Perfil](../perfil.png)
-[Tela de menu](../menu.png)
-[Tela de categoria](../categoria.png)
-[Tela de lancamentos](../lancamentos.png)
-[Tela de conta](../conta.png)
-[Tela de acoes](../acoes.png)
-[Tela de noticias](../noticias.png)
+[Tela de cadastro](/./registrar.png)
+[Tela de Login](/./login.png)
+[Tela de Perfil](/./perfil.png)
+[Tela de menu](/./menu.png)
+[Tela de categoria](/./categoria.png)
+[Tela de lancamentos](/./lancamentos.png)
+[Tela de conta](/./conta.png)
+[Tela de acoes](/./acoes.png)
+[Tela de noticias](/./noticias.png)
 
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
