@@ -9,13 +9,12 @@ Engenharia de Software
 
 ## Participantes
 
-Scrum Master: Pedro Henrique Moreira Caixeta Ferreira
-Product Owner: Hugo Viana Tinoco
-Equipe de Desenvolvimento
-Petrius Arturo Paglioni (Desenvolvedor Front End)
-Gustavo Menezes Barbosa (Desenvolvedor Back End)
-Hugo Viana Tinoco (Analista de Negócios)
-Enzo de Paiva Rezende (Designer)
+Pedro Henrique Moreira Caixeta Ferreira
+Hugo Viana Tinoco
+Petrius Arturo Paglioni
+Gustavo Menezes Barbosa
+Hugo Viana Tinoco
+Enzo de Paiva Rezende
 
 # Estrutura do Documento
 
@@ -195,8 +194,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuario cadastre um perfil | ALTA | 
+|RF-002| Visualizar receitas e despesas            | MÉDIA |
+|RF-003| Permitir que o usuário cadastre categorias | ALTA | 
+|RF-004| Permitir que o usuário visualize categorias | MÉDIA |
+|RF-005| Permitir que o usuario cadastre uma categoria de lancamento | ALTA | 
+|RF-006| Permitir que o usuário visualize lancamentos   | MÉDIA |
+|RF-007| Permitir criar uma conta | ALTA | 
+|RF-008| Permitir visualizar acoes | MÉDIA |
+|RF-009| Permitir visualizar noticiais | MÉDIA |
+|RF-010| Permitir que o usuário visualize as contas | MÉDIA |
+|RF-011| Emitir graficos de gastos                 | MÉDIA |
 
 
 ### Requisitos não Funcionais
@@ -204,7 +212,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 7s |  BAIXA |
+|RNF-003| Deve ser facil de entender |  ALTA |
+|RNF-004| Facil usabilidade e acessibilidade |  ALTA |
 
 > Com base nas Histórias de Usuário, enumere os requisitos da sua
 > solução. Classifique esses requisitos em dois grupos:
@@ -236,6 +246,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+|03| Devera ser desensolvido em HTML, CSS, JS em front end |
+|04| Devera ter base de dados                              |
 
 
 > Enumere as restrições à sua solução. Lembre-se de que as restrições
@@ -248,7 +260,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+Tela de cadastro
+Tela de Login
+Tela de Perfil
+Tela de menu
+Tela de categoria
+Tela de lancamentos
+Tela de conta
+Tela de acoes
+Tela de noticias
+
 
 > Apresente as principais interfaces da solução. Discuta como 
 > foram elaboradas de forma a atender os requisitos funcionais, não
@@ -316,7 +337,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Scrum Master: Pedro Henrique Moreira Caixeta Ferreira
+Product Owner: Hugo Viana Tinoco
+Equipe de Desenvolvimento
+Petrius Arturo Paglioni (Desenvolvedor Front End)
+Gustavo Menezes Barbosa (Desenvolvedor Back End)
+Hugo Viana Tinoco (Analista de Negócios)
+Enzo de Paiva Rezende (Designer)
 
 > Apresente a divisão de papéis e tarefas entre os membros do grupo.
 >
@@ -332,7 +359,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |-----------|-------------------------|---------------|
 |Processo de Design Thinkgin  | Miro |  [https://miro.com/XXXXXXX](https://miro.com/app/board/uXjVPTfmQrc=/) | 
 |Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas 2)|
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
 |Protótipo Interativo | Figma | [https://figma.com/XXXXXXX](https://www.figma.com/file/MLijQbElQhOrrk2fLrZyPj/Projeto-TIAW-Educa%C3%A7%C3%A3o-Financeira?node-id=0%3A1) | 
 
 >
@@ -360,7 +386,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Controle de Versão
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Versao 1.0
 
 > Discuta como a configuração do projeto foi feita na ferramenta de
 > versionamento escolhida. Exponha como a gerência de tags, merges,
