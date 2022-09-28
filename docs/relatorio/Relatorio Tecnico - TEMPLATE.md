@@ -134,7 +134,7 @@ No projeto tera um formato com tela de login onde apos logar tera uma tela mostr
 
 ![Persona 2](/./persona2.png)
 
-![Persona 3](/./persona3png)
+![Persona 3](/./persona3.png)
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
