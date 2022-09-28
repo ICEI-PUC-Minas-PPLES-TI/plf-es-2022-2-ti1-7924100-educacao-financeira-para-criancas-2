@@ -134,11 +134,11 @@ No projeto tera um formato com tela de login onde apos logar tera uma tela mostr
 
 ## Personas
 
-![Persona 1](/./persona1.png)
+![Persona 1](images/persona1.png)
 
-![Persona 2](/./persona2.png)
+![Persona 2](images/persona2.png)
 
-![Persona 3](/./persona3.png)
+![Persona 3](images/persona3.png)
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
@@ -291,7 +291,7 @@ Tela de noticias
 
 ## User Flow
 
-![Flow](/./flow.png)
+![Flow](images/flow.png)
 
 > Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
 > mapear todo fluxo de telas do site ou app. Essa técnica funciona
@@ -310,23 +310,23 @@ Tela de noticias
 
 ## Wireframes
 
-![Tela de cadastro](/./registrar.png)
+![Tela de cadastro](images/registrar.png)
 
-![Tela de Login](/./login.png)
+![Tela de Login](images/login.png)
 
-![Tela de Perfil](/./perfil.png)
+![Tela de Perfil](images/perfil.png)
 
-![Tela de menu](/./menu.png)
+![Tela de menu](images/menu.png)
 
-![Tela de categoria](/./categoria.png)
+![Tela de categoria](images/categoria.png)
 
-![Tela de lancamentos](/./lancamentos.png)
+![Tela de lancamentos](images/lancamentos.png)
 
-![Tela de conta](/./conta.png)
+![Tela de conta](images/conta.png)
 
-![Tela de acoes](/./acoes.png)
+![Tela de acoes](images/acoes.png)
 
-![Tela de noticias](/./noticiais.png)
+![Tela de noticias](images/noticiais.png)
 
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
