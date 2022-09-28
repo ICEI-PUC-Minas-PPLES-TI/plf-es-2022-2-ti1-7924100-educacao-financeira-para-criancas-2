@@ -13,7 +13,6 @@ Pedro Henrique Moreira Caixeta Ferreira
 Hugo Viana Tinoco
 Petrius Arturo Paglioni
 Gustavo Menezes Barbosa
-Hugo Viana Tinoco
 Enzo de Paiva Rezende
 
 # Estrutura do Documento
@@ -297,7 +296,16 @@ Tela de noticias
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+[Tela de cadastro](../registrar.png)
+[Tela de Login](../login.png)
+[Tela de Perfil](../perfil.png)
+[Tela de menu](../menu.png)
+[Tela de categoria](../categoria.png)
+[Tela de lancamentos](../lancamentos.png)
+[Tela de conta](../conta.png)
+[Tela de acoes](../acoes.png)
+[Tela de noticias](../noticias.png)
+
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
 > estrutura de um site web e seu relacionamentos entre suas
@@ -317,7 +325,11 @@ Tela de noticias
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentacao do github, wireframes, miro
+Hugo Viana Tinoco - Cuidou dos Slides e ajudou na parte do design thinking
+Petrius Arturo Paglioni - Cuidou da parte de documentacao 
+Gustavo Menezes Barbosa - Opinioes no trabalho
+Enzo de Paiva Rezende - Opinioes no trabalho
 
 > Nesta parte do documento, você deve apresentar a metodologia 
 > adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
