@@ -322,7 +322,7 @@ Tela de noticias
 
 ![Tela de acoes](/./acoes.png)
 
-![Tela de noticias](/./noticias.png)
+![Tela de noticias](/./noticiais.png)
 
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
