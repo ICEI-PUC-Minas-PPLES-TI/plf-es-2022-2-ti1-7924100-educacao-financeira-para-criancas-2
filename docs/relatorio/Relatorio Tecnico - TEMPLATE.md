@@ -10,9 +10,13 @@ Engenharia de Software
 ## Participantes
 
 Pedro Henrique Moreira Caixeta Ferreira
+
 Hugo Viana Tinoco
+
 Petrius Arturo Paglioni
+
 Gustavo Menezes Barbosa
+
 Enzo de Paiva Rezende
 
 # Estrutura do Documento
