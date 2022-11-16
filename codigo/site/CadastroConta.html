@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Conta</title>
+    <link rel="stylesheet" href="css/styleConta.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+    </script>
+
+    <body onload="init()" class="vsc-initialized">
+
+        <div class="navbar">
+
+            <a href="#">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Perfil 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-content">
+                    <a href="#">Meu Perfil</a>
+                    <a href="#">Alterar Perfil</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Gerenciar Cadastros 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="#">Categoria</a>
+                    <a href="#">Contas</a>
+                </div>
+            </div>
+
+            <a href="#">Lançamentos</a>
+            <a href="#">Ações</a>
+            <a href="#">Notícias</a>
+            <div class="sair">
+                <a href="#">Sair</a>
+            </div>
+
+        </div>
+
+        <form id="form-conta">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+
+                        <label for="inputId">ID</label>
+                        <input type="text" class="form-control" id="inputId" placeholder="ID" disabled="">
+
+                        <label for="inputNome">Nome</label>
+                        <input type="text" id="inputNome" class="form-control" required="" placeholder="Informe o nome da conta">
+
+                        <label for="inputTipo">Tipo</label>
+                        <select name="tipos" id="inputTipo" class="form-controll" onChange='selectsTipo()' require>
+                          <option value="Receitas">Receitas</option>
+                          <option value="Despesas">Despesas</option>
+                        </select>
+
+                        <label for="inputCategoria">Categoria</label>
+
+                        <select name="inputCategoria" id="inputCategorias" class="form-controll" onChange="selectsCategoria()" required>
+                                <option value="">Selecione uma categoria</option>
+                        </select>
+
+
+
+                        <div class="text-center">
+                            <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                            <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                            <input type="button" class="btn btn-danger" id="btnDelete" value="Remover">
+                            <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar">
+                        </div>
+                    </div>
+                </div>
+        </form>
+
+        <div class="column2">
+            <table id="grid-contas" class="styled-table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Categoria</th>
+                    </tr>
+                </thead>
+                <tbody id="table-contas">
+                    <tr>
+                        <td scope="row">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <script src="js/appCategoria.js"></script>
+        <script src="js/appConta.js"></script>
+        <script>
+            function exibeContas() {
+                // Remove todas as linhas do corpo da tabela
+                $("#table-contas").html("");
+
+                // Popula a tabela com os registros do banco de dados
+                for (i = 0; i < dbContas.data.length; i++) {
+                    let conta = dbContas.data[i];
+                    $("#table-contas").append(`<tr><td scope="row">${conta.id}</td>
+                                                <td>${conta.nome}</td>
+                                                <td>${conta.tipo}</td>
+                                                <td>${conta.categoria}</td>
+                                            </tr>`);
+                }
+            }
+
+
+
+
+            function ListaCategorias() {
+
+                let opcoes = document.getElementById('inputCategorias');
+                let atribuir = "Selecione uma categoria";
+                for (i = 0; i < dbCategorias.data.length; i++) {
+                    atribuir += '<option value=' + dbCategorias.data[i].nome + '>' + dbCategorias.data[i].nome + '</option>'
+
+                }
+                opcoes.innerHTML = atribuir;
+            }
+
+            function selectsTipo() {
+                const select = document.querySelector('#inputTipo');
+
+                const indice = select.selectedIndex;
+                const valor = select.value;
+                const text = select.options[indice].text;
+
+                console.log(text);
+            }
+
+            function selectsCategoria() {
+                const select = document.querySelector('#inputCategorias');
+
+                const indice = select.selectedIndex;
+                const valor = select.value;
+                const text = select.options[indice].text;
+
+                console.log(text);
+            }
+
+            function init() {
+
+
+                ListaCategorias();
+                exibeContas();
+
+                // Adiciona funções para tratar os eventos 
+                $("#btnInsert").click(function() {
+                    // Verfica se o formulário está preenchido corretamente
+                    if (!$('#form-conta')[0].checkValidity()) {
+                        alert("Preencha o formulário corretamente.");
+                        return;
+                    }
+
+                    // Obtem os valores dos campos do formulário
+                    let campoNomeConta = $("#inputNome").val();
+                    let campoTipo = $("#inputTipo").val();
+                    let campoCategoria = $("#inputCategorias").val();
+                    let conta = {
+                        nome: campoNomeConta,
+                        tipo: campoTipo,
+                        categoria: campoCategoria
+                    };
+
+                    insertConta(conta);
+
+                    // Reexibe os Contas
+                    exibeContas();
+
+                    // Limpa o formulario
+                    $("#form-conta")[0].reset();
+                });
+
+                // Intercepta o click do botão Alterar
+                $("#btnUpdate").click(function() {
+                    // Obtem os valores dos campos do formulário
+                    let campoId = $("#inputId").val();
+                    if (campoId == "") {
+                        alert("Selecione uma conta para ser alterada.");
+                        return;
+                    }
+
+                    let campoNomeConta = $("#inputNome").val();
+                    let campoTipo = $("#inputTipo").val();
+                    let campoCategoria = $("#inputCategorias").val();
+                    let conta = {
+                        nome: campoNomeConta,
+                        tipo: campoTipo,
+                        categoria: campoCategoria
+                    };
+
+                    updateConta(parseInt(campoId), conta);
+
+                    // Reexibe os Contas
+                    exibeContas();
+
+                    //Option Conta
+                    //ListaCategorias();
+
+                    // Limpa o formulario
+                    $("#form-conta")[0].reset();
+                });
+
+                // Intercepta o click do botão Excluir
+                $("#btnDelete").click(function() {
+                    let campoId = $("#inputId").val();
+                    if (campoId == "") {
+                        alert("Selecione uma conta a ser excluída.");
+                        return;
+                    }
+                    deleteConta(parseInt(campoId));
+
+                    // Reexibe os Contas
+                    exibeContas();
+
+                    //Option Conta
+                    // ListaCategorias();
+
+                    // Limpa o formulario
+                    $("#form-conta")[0].reset();
+                });
+
+                // Intercepta o click do botão Listar Contas
+                $("#btnClear").click(function() {
+                    $("#form-conta")[0].reset();
+                });
+
+                // Oculta a mensagem de aviso após alguns segundos
+                $('#msg').bind("DOMSubtreeModified", function() {
+                    window.setTimeout(function() {
+                        $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                });
+
+                // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+                $("#grid-contas").on("click", "tr", function(e) {
+                    let linhaConta = this;
+                    colunas = linhaConta.querySelectorAll("td");
+
+                    $("#inputId").val(colunas[0].innerText);
+                    $("#inputNome").val(colunas[1].innerText);
+                    $("#inputTipo").val(colunas[2].innerText);
+                    $("#inputCategorias").val(colunas[3].innerText);
+                });
+
+                exibeContas();
+            }
+        </script>
+
+        <footer>
+            <p>FinanKids <a href="#"> LTDA</a></p>
+        </footer>
+
+    </body>
+
+</html>

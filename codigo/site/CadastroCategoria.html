@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Categoria</title>
+    <link rel="stylesheet" href="css/styleCategoria.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <body onload="init()" class="vsc-initialized">
+
+        <div class="navbar">
+
+            <a href="#">Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Perfil 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <div class="dropdown-content">
+                    <a href="#">Meu Perfil</a>
+                    <a href="#">Alterar Perfil</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Gerenciar Cadastros 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="#">Categoria</a>
+                    <a href="#">Contas</a>
+                </div>
+            </div>
+
+            <a href="#">Lançamentos</a>
+            <a href="#">Ações</a>
+            <a href="#">Notícias</a>
+            <div class="sair">
+                <a href="#">Sair</a>
+            </div>
+
+        </div>
+
+        <form id="form-categoria">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+
+                        <label for="inputId">ID</label>
+                        <input type="text" class="form-control" id="inputId" placeholder="ID" disabled="">
+
+                        <label for="inputNome">Nome</label>
+                        <input type="text" id="inputNome" class="form-control" required="" placeholder="Informe o nome da categoria">
+
+                        <div class="text-center">
+                            <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                            <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                            <input type="button" class="btn btn-danger" id="btnDelete" value="Remover">
+                            <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar">
+                        </div>
+                    </div>
+                </div>
+        </form>
+
+        <div class="column2">
+            <table id="grid-categorias" class="styled-table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Categoria</th>
+                    </tr>
+                </thead>
+                <tbody id="table-categorias">
+                    <tr>
+                        <td scope="row">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/appCategoria.js"></script>
+        <script>
+            function exibeCategorias() {
+                // Remove todas as linhas do corpo da tabela
+                $("#table-categorias").html("");
+
+                // Popula a tabela com os registros do banco de dados
+                for (i = 0; i < dbCategorias.data.length; i++) {
+                    let categoria = dbCategorias.data[i];
+                    $("#table-categorias").append(`<tr><td scope="row">${categoria.id}</td>
+                                                <td>${categoria.nome}</td>
+                                            </tr>`);
+                }
+            }
+
+            function init() {
+                // Adiciona funções para tratar os eventos 
+                $("#btnInsert").click(function() {
+                    // Verfica se o formulário está preenchido corretamente
+                    if (!$('#form-categoria')[0].checkValidity()) {
+                        alert("Preencha o formulário corretamente.");
+                        return;
+                    }
+
+                    // Obtem os valores dos campos do formulário
+                    let campoNomeConta = $("#inputNome").val();
+                    //let campoCategoria = $("#inputCategoria").val();
+                    let categoria = {
+                        nome: campoNomeConta
+
+                    };
+
+                    insertCategoria(categoria);
+
+                    // Reexibe os categorias
+                    exibeCategorias();
+
+                    // Limpa o formulario
+                    $("#form-categoria")[0].reset();
+                });
+
+                // Intercepta o click do botão Alterar
+                $("#btnUpdate").click(function() {
+                    // Obtem os valores dos campos do formulário
+                    let campoId = $("#inputId").val();
+                    if (campoId == "") {
+                        alert("Selecione uma categoria para ser alterada.");
+                        return;
+                    }
+                    let campoNomeConta = $("#inputNome").val();
+                    //let campoCategoria = $("#inputCategoria").val();
+                    let categoria = {
+                        nome: campoNomeConta
+
+                    };
+
+                    updateCategoria(parseInt(campoId), categoria);
+
+                    // Reexibe os categorias
+                    exibeCategorias();
+
+                    // Limpa o formulario
+                    $("#form-categoria")[0].reset();
+                });
+
+                // Intercepta o click do botão Excluir
+                $("#btnDelete").click(function() {
+                    let campoId = $("#inputId").val();
+                    if (campoId == "") {
+                        alert("Selecione uma categoria a ser excluída.");
+                        return;
+                    }
+                    deleteCategoria(parseInt(campoId));
+
+                    // Reexibe os categorias
+                    exibeCategorias();
+
+                    // Limpa o formulario
+                    $("#form-categoria")[0].reset();
+                });
+
+                // Intercepta o click do botão Listar categorias
+                $("#btnClear").click(function() {
+                    $("#form-categoria")[0].reset();
+                });
+
+                // Oculta a mensagem de aviso após alguns segundos
+                $('#msg').bind("DOMSubtreeModified", function() {
+                    window.setTimeout(function() {
+                        $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                });
+
+                // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+                $("#grid-categorias").on("click", "tr", function(e) {
+                    let linhaCategoria = this;
+                    colunas = linhaCategoria.querySelectorAll("td");
+
+                    $("#inputId").val(colunas[0].innerText);
+                    $("#inputNome").val(colunas[1].innerText);
+                });
+
+                exibeCategorias();
+            }
+        </script>
+
+        <footer>
+            <p>FinanKids <a href="#"> LTDA</a></p>
+        </footer>
+
+    </body>
+
+</html>
