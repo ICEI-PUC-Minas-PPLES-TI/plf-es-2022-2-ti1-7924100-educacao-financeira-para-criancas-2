@@ -20,11 +20,15 @@ O FinanKids veio com ituito de ajudar na organizacao de suas economias, assim pr
 PASSO A PASSO:
 
 1 - Ao entrar pela primeira vez no sistema, o usuario devera realizar o cadastro.
+
 2 - Apos realizar o cadastro, o usuario devera realizar o login.
 
 PASSOS DE COMO USAR O SISTEMA INTERNO
-3 - 
-4 - 
+
+3 - Realizar nova trasacao clicando em nova transacao
+
+4 - Possilibidade de excluir a transacao
+
 5 - 
-6 - 
-7 - Possibilita acessar noticias e ações sobre economia.
+
+6 - Possibilita acessar noticias sobre economia.
