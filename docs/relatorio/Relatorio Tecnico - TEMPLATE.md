@@ -58,7 +58,7 @@ Enzo de Paiva Rezende
 
 ## Problema
 
-O problema principal que pretendemos resolver é o de descontrole financeiro, falta de planejamento ou simplesmente saber lidar com o dinheiro de maneira geral. Uma criança, um adolescente descontrolado financeiramente, se torna adulto descontrolado, cheio de dívidas, sem sucesso e prosperidade. Visto que o endividamento dos brasileiros atingiu em março a máxima histórica  para o  mês, de 77,5%, a maior proporção já registrada nos 12 anos do levantamento. Segundo a Pesquisa de Endividamento e Inadimplência do Consumidor.
+O problema principal que pretendemos resolver é o de descontrole financeiro, falta de planejamento ou simplesmente saber lidar com o dinheiro de maneira geral. Uma criança, um adolescente descontrolado financeiramente, se torna adulto descontrolado, cheio de dívidas, sem sucesso e prosperidade. Visto que o endividamento dos brasileiros atingiu em março a máxima histórica para o mês, de 77,5%, a maior proporção já registrada nos 12 anos do levantamento. Segundo a Pesquisa de Endividamento e Inadimplência do Consumidor.
 
 > Nesse momento você deve apresentar o problema que a sua aplicação deve
 > resolver. No entanto, não é a hora de comentar sobre a aplicação.
@@ -107,7 +107,7 @@ O motivo desta escolha foi por conta da necessidade das crianças de hoje em hoj
 
 ## Público-Alvo
 
-Educadores para ajudar nas aulas e transparecer as mentes das criancas e dos jovens, pais na hora de educar e realizar investimentos, criancas , adolescentes e jovens sao os protagonistas, eles iram construir seus futuros com esses ensinamentos.
+Educadores para ajudar nas aulas e transparecer as mentes das crianças e dos jovens, pais na hora de educar e realizar investimentos, crianças , adolescentes e jovens são os protagonistas, eles irão construir seus futuros com esses ensinamentos.
 
 > Descreva quem serão as pessoas que usarão a sua aplicação indicando os
 > diferentes perfis. O objetivo aqui não é definir quem serão os
@@ -126,7 +126,7 @@ Educadores para ajudar nas aulas e transparecer as mentes das criancas e dos jov
  
 # Especificações do Projeto
 
-No projeto tera um formato com tela de login onde apos logar tera uma tela mostrando as receitas, as despesas e o saldo, logo apos o usuario tem a possiblidade de alterar qualquer informacao de login. Tera uma tela de adicionar uma categoria de entrada ou saida de dinheiro, logo apos uma tela de conta onde se ira especificar se e receita ou despesas e colocar a categoria, tera uma tela de lancamentos onde se ira colocar a conta e o valor. Para completar uma tela de noticias de como investir melhor seu dinheiro e um tela com as melhores acoes para se investir
+No projeto terá um formato com tela de login onde após logar. Terá uma tela mostrando as receitas, as despesas e o saldo. Terá uma função para adicionar uma transação assim podendo adicionar uma categoria, o valor, o tipo (Receita ou despesa) e a data do lançamento. O usuário também poderá excluir quando quiser e ter acesso a todo histórico de transação e o gráfico. Para completar uma tela de notícias de como investir melhor seu dinheiro.
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
@@ -347,15 +347,15 @@ Tela de noticias
 
 # Metodologia
 
-Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentacao do github, wireframes, miro
+Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentação do github, wireframes, miro
 
 Hugo Viana Tinoco - Cuidou dos Slides e ajudou na parte do design thinking
 
-Petrius Arturo Paglioni - Cuidou da parte de documentacao
+Petrius Arturo Paglioni - Cuidou da parte de documentação
 
-Gustavo Menezes Barbosa - Opinioes no trabalho
+Gustavo Menezes Barbosa - Opiniões no trabalho
 
-Enzo de Paiva Rezende - Opinioes no trabalho
+Enzo de Paiva Rezende - Opiniões no trabalho
 
 > Nesta parte do documento, você deve apresentar a metodologia 
 > adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
@@ -463,12 +463,10 @@ Versao 1.0
 >
 > ![Exemplo de Wireframe](images/Github-Workflow.png)
 
-# **############## SPRINT 1 ACABA AQUI #############**
-
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Criar um sistema acessível para (crianças, jovens, adultos e educadores) possibilitando inserir transações de receitas e despesas, a categoria e data de lançamento, podendo realizar o controle do dinheiro mensal e complementando com uma aba de notícias sobre economia.
 
 ## Tecnologias Utilizadas
 
@@ -501,7 +499,7 @@ Versao 1.0
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona algumas transações, o sistema existe o total de receitas, despesas e seu saldo juntamente com o gráfico. O usuário acessa a aba de pesquisas e tira algumas informações, depois finaliza de utilizar o software e realiza logout.
 
 > Apresente os cenários de testes utilizados na realização dos testes da
 > sua aplicação. Escolha cenários de testes que demonstrem os requisitos
@@ -509,7 +507,12 @@ Versao 1.0
 
 ## Plano de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+1 – Teste da página de cadastro e login com autenticação no sistema.
+2 – Teste do formulário de transação.
+3 – Teste de excluir a transação.
+4 – Teste da exibição da receita, despesa juntamente com a exibição do saldo.
+5 – Teste do gráfico de despesas e receitas
+6 – Teste de logout no sistema
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
@@ -543,7 +546,7 @@ Versao 1.0
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Sites: [w3schol](https://www.w3schools.com/)
 
 > Inclua todas as referências (livros, artigos, sites, etc) utilizados
 > no desenvolvimento do trabalho.
