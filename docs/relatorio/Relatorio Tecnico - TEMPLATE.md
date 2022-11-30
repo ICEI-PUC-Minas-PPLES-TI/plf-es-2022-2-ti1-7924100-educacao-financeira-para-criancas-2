@@ -91,7 +91,7 @@ O que queremos com nosso projeto é mudar o mundo, mas devemos começar pequeno.
 
 ## Justificativa
 
-O motivo desta escolha foi por conta da necessidade das criancas de hoje em hoje em obter uma educacao financeira logo cedo assim, ajudando cada vez mais a cronstrucao do futuro das mesmas. Foi aprofundado na questao de entrada e saida de dinheiro, colocando tambem o acesso a mercado de acoes e aulas de como investir de forma correta o dinheiro.
+O motivo desta escolha foi por conta da necessidade das crianças de hoje em hoje em obter uma educação financeira logo cedo assim, ajudando cada vez mais na construção do futuro das mesmas. Foi aprofundado na questão de entrada e saída de dinheiro, colocando também o acesso ao mercado de ações e aulas de como investir de forma correta o dinheiro.
 
 > Descreva a importância ou a motivação para trabalhar com esta aplicação
 > que você escolheu. Indique as razões pelas quais você escolheu seus
