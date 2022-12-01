@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melhores ações 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/acoes.css">
+    <script src="js/login.js"></script>
+</head>
+<script>
+    if (!usuarioCorrente.login) {
+        window.location.href = LOGIN_URL;
+    }
+
+    function initPage() {
+
+        // Associa a função de logout ao botão
+        document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+        // Informa o nome do usuário logado
+        document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+
+    }
+
+    // Associa ao evento de carga da página a função para verificar se o usuário está logado
+    window.addEventListener('load', initPage);
+</script>
+
+<body>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            iShares Ibovespa Fundo de Índice
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div id="acao1"></div>
+            </li>
+            <li class="list-group-item">
+                <div id="preco1"></div>
+            </li>
+            <li class="list-group-item">O BOVA11 é um ETF (Exchange Traded Funds) – uma carteira de ativos que utiliza um índice como base de referência – neste caso, o Índice Bovespa (IBOV). É um fundo de índice que apresenta uma performance em linha com o IBOV, sendo uma forma
+                indireta de se investir no Ibovespa.</li>
+        </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            iShares S&P 500 Fundo de Investimento no Exterior
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div id="acao2"></div>
+            </li>
+            <li class="list-group-item">
+                <div id="preco2"></div>
+            </li>
+            <li class="list-group-item">O IVVB11 é um fundo de índice (ETF) negociado na B3 que replica, em reais, a performance do S&P500 — o índice americano que reúne as 500 maiores companhias de capital aberto dos EUA. Dessa forma, pode-se dizer que o IVVB11 é uma forma de investir
+                em ações americanas sem precisar sair do Brasil e nem abrir uma conta em uma corretora no exterior.</li>
+        </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            FII BTG PACTUAL FUNDO DE FUNDOS
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div id="acao3"></div>
+            </li>
+            <li class="list-group-item">
+                <div id="preco3"></div>
+            </li>
+            <li class="list-group-item">BCFF11 é um fundo imobiliário do tipo papel FOF – Fundo de fundos. Seus investimentos são destinados primeiramente a aquisição de cotas de outros fundos imobiliários. Fundo de fundos como o BCFF11 possuem um perfil de ser bem diversificado.
+                Investindo em FOFs, o portfólio do fundo vai se dividir em uma variedade de fundos distintos.</li>
+        </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            TREND ETF LBMA OURO FDO. INV. ÍNDICE
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div id="acao4"></div>
+            </li>
+            <li class="list-group-item">
+                <div id="preco4"></div>
+            </li>
+            <li class="list-group-item">O GOLD11 realiza seus investimentos com base no ETF iShares Gold Trust, da empresa Blackrock, listado na bolsa de Nova Iorque (NYSE). Esse é um fundo de índice norte-americano que objetiva refletir a cotação do ouro em barra. Então, o investidor
+                que pretende expor seu capital ao ouro encontra praticidade e maior acessibilidade ao adquirir cotas do ETF GOLD11 na B3. O investimento mínimo nesse ETF é de uma cota. </li>
+        </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Banco do Brasil
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div id="acao5"></div>
+            </li>
+            <li class="list-group-item">
+                <div id="preco5"></div>
+            </li>
+            <li class="list-group-item">Fundado em 1808, o Banco do Brasil é a primeira instituição bancária a operar no País. Ocupa as primeiras colocações entre os maiores bancos da América Latina e Caribe, com mais de R$ 1,4 trilhão em ativos. Também é um dos quatro maiores bancos
+                brasileiros de capital aberto. Com imensa capilaridade, o BB está presente em mais de 99% dos municípios brasileiros, por meio de uma rede de mais de 4,7 mil agências. Com cerca de 96 mil colaboradores, o número de clientes do BB ultrapassa
+                a casa dos 68 milhões. Com presença no Exterior desde 1941, por rede própria e acordos com outras instituições, o banco atinge cerca de 100 países.</li>
+        </ul>
+    </div>
+    <a href="index.html"><button id="btn"><strong>Voltar</strong></button></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/acoes.js"></script>
+</body>
+
+</html>
