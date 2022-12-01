@@ -1,0 +1,18 @@
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+    background-color: black;
+    color: greenyellow;
+}
+
+#btn {
+    background-color: greenyellow;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    width: 80px;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
