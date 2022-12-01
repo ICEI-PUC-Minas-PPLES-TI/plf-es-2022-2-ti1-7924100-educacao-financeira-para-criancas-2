@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Links das Páginas de Estilo-->
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/login.js"></script>
+
+    <!--Fim dos Links das Páginas de Estilo-->
+
+
+    <!--Link do Google Material icons  -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!--Fim dos Link do Google Materia Icons-->
+
+
+    <!--Título e Logo da Aba da Página-->
+
+    <title>FinanKids</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!--Fim do Título e do Logo da Aba da Página -->
+
+</head>
+<script>
+    if (!usuarioCorrente.login) {
+        window.location.href = LOGIN_URL;
+    }
+
+    function initPage() {
+
+        // Associa a função de logout ao botão
+        document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+        // Informa o nome do usuário logado
+        document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+
+    }
+
+    // Associa ao evento de carga da página a função para verificar se o usuário está logado
+    window.addEventListener('load', initPage);
+</script>
+
+<body>
+
+    <!--Início do Menu Container-->
+    <!--Início do Aside-->
+
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <a href="dashboard.html">
+                        <img src="img/logo.png" />
+                    </a>
+                    <a href="dashboard.html">
+                        <h3>FinanKids</h3>
+                    </a>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons" onclick="MobileMenu.close()">close</span>
+                </div>
+            </div>
+
+            <!--Início do Menu Sidebar-->
+
+            <div class="sidebar">
+                <a href="pesquisar.html">
+                    <span class="material-icons">account_balance</span>
+                    <p>Pesquisar</p>
+                </a>
+                <a href="#" id="btn_logout">
+                    <span class="material-icons">logout</span>
+                    <p>Sair</p>
+                </a>
+            </div>
+        </aside>
+
+        <!--Fim do Menu Sidebar -->
+        <!--Fim do Aside-->
+
+
+        <!--Início da Main-->
+
+        <main>
+            <div class="topMenu">
+                <h2 id="date-display"></h2>
+            </div>
+
+            <!--Seção de Saldos / Despesas / Entradas-->
+
+            <section id="balance">
+
+                <div class="card saldo">
+                    <h3>
+                        <span>Saldo</span>
+                        <img class="total" src="svg/Saldo.svg" />
+                    </h3>
+                    <p id="totalDisplay">R$ 0,00</p>
+                </div>
+
+                <div class="card despesas">
+                    <h3>
+                        <span>Despesas</span>
+                        <img src="svg/Despesas.svg" alt="Imagem de saídas" />
+                    </h3>
+                    <p id="expenseDisplay">R$ 0,00</p>
+                </div>
+
+                <div class="card lucro">
+                    <h3>
+                        <span>Entradas</span>
+                        <img src="svg/Entradas.svg" alt="Imagem de entradas" />
+                    </h3>
+                    <p id="incomeDisplay">R$ 0,00</p>
+                    <p id="dateDisplay"></p>
+                </div>
+            </section>
+
+            <!--Fim Seção Saldo / Despesas / Entradas-->
+
+
+            <!--Menu Transações (Tabela para receber Novas Transações)-->
+
+            <section id="transaction">
+
+                <div class="last-transactions">
+                    <div class="table-top">
+                        <h2>Últimas Transações</h2>
+                        <button href="#" id="newTransaction" class="button new" onclick="Modal.open()">
+                            + Nova Transação
+                        </button>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nome do Lançamento</th>
+                                    <th>Quantia</th>
+                                    <th>Data</th>
+                                    <th>Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!--Fim Menu Transações (Tabela para receber Novas Transações)-->
+
+
+            <div class="addTransactionMobileButton">
+                <button href="#" id="newTransactionMobile" onclick="Modal.open()">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+        </main>
+
+        <!--Fim da Main-->
+
+
+        <!--Menu Botões de Cor da Página (Tema Escuro, Tema Claro)-->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons" id="mobile-menu" onclick="MobileMenu.open()">menu</span>
+                </button>
+
+                <div class="theme-toggler">
+                    <span class="material-icons active" id="toggle-light" onclick="ThemeToggler.Light()">light_mode</span>
+                    <span class="material-icons" id="toggle-dark" onclick="ThemeToggler.Dark()">dark_mode</span>
+                </div>
+            </div>
+
+            <!--Fim do Menu de Botões de Cor de Página (Tema Escuro, Tema Claro)-->
+
+
+
+            <!--Gráfico de Entradas e Despesas-->
+
+            <div class="analytics">
+                <h3>Gráfico | Balanço Geral</h3>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Fim do Gráfio de Entradas e Despesas-->
+    <!--Fim do Menu Container-->
+
+
+    <!--Botão Nova Transação e Informações Sobre a Nova Transação-->
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div id="form">
+                <div class="modalTop">
+                    <h2>Nova Transação</h2>
+                    <span class="material-icons" id="close-modal-btn" onclick="Modal.close()">close</span>
+                </div>
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <h2>Categoria</h2>
+                        <label class="sr-only" for="description">Tipo</label>
+                        <input type="text" id="description" name="description" placeholder="Tipo de Categoria" />
+                    </div>
+
+
+
+                    <div class="input-group">
+                        <h2>Valor da Transação</h2>
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" id="amount" name="amount" step="0.01" placeholder="R$ 0.00" />
+                        <small class="help">Observação: Selecione "Entradas" para adicionar um valor ao saldo da conta e "Despesas"
+                            para adicionar um novo gasto que você tenha feito.</small>
+                    </div>
+
+
+
+                    <div class="buttons-income-expense">
+                        <button id="incomeButton" onclick="Form.setIncome();  return false;" class="income">
+                            Entradas
+                        </button>
+                        <button id="expenseButton" onclick="Form.setExpense(); return false;">
+                            Despesas
+                        </button>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" id="date" name="Data da Transação" />
+                    </div>
+
+
+
+                    <div class="actions">
+                        <button class="save">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Fim do Botão de Novas Transações e Informações Sobre a Nova Transação-->
+
+
+
+    <!--Bibliotecas Java Script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/menuAndModal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Fim das Bibliotecas Java Script-->
+
+</body>
+
+</html>
