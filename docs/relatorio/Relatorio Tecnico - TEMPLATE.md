@@ -331,15 +331,15 @@ Tela de ações
 
 # Metodologia
 
-Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentação do github, wireframes, miro
+Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentação do github, wireframes, miro, parte de organização, tela de perfil e todo o resto
 
-Hugo Viana Tinoco - Cuidou dos Slides e ajudou na parte do design thinking
+Hugo Viana Tinoco - Cuidou dos Slides, judou na parte do design thinking, parte de organização
 
-Petrius Arturo Paglioni - Cuidou da parte de documentação
+Petrius Arturo Paglioni - Cuidou da parte de documentação, tela de ações
 
-Gustavo Menezes Barbosa - Opiniões no trabalho
+Gustavo Menezes Barbosa - Opiniões no trabalho, parte do local storage
 
-Enzo de Paiva Rezende - Opiniões no trabalho
+Enzo de Paiva Rezende - Opiniões no trabalho, , parte do local storage
 
 > Nesta parte do documento, você deve apresentar a metodologia 
 > adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
@@ -524,7 +524,15 @@ O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona alg
 
 ## Registros de Testes
 
-Foram realizados alguns testes, testes de autenticacao, testes de criacao da tela de transcacoes, da implementacao de receiras, despesas e saldos
+Foram realizados alguns testes, testes de autenticação, testes de criação da tela de transações, da implementação de receitas, despesas e saldos, teste de registros, também implantação de gráficos e tela de ações.
+
+Pontos fortes: Criança da tela de autenticação, exibição de perfil e implementação e junção das sprints para uma tela só, chamada de formulário de transações.
+
+Pontos Fracos: Implementar uma tela de ações com api gratuita, devido a sua disponibilidade.
+
+O aplicativo teve muitas melhorias, mas as principais falhas foram durante a criação do local storage, onde houve problemas de criação de funções e declaração de todas as variáveis utilizadas no processo.
+
+Contudo, o aplicativo foi testado e todos os erros corrigidos.
 
 > Discorra sobre os resultados do teste. Ressaltando pontos fortes e
 > fracos identificados na solução. Comente como o grupo pretende atacar
