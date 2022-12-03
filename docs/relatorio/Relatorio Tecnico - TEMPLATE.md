@@ -479,7 +479,7 @@ HOST - AWARDSPACE
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+ ![Arquitetura](images/Arquitetura.png)
 
 > Inclua um diagrama da solução e descreva os módulos e as tecnologias
 > que fazem parte da solução. Discorra sobre o diagrama.
@@ -500,10 +500,15 @@ O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona alg
 ## Plano de Testes
 
 1 – Teste da página de cadastro e login com autenticação no sistema.
+
 2 – Teste do formulário de transação.
+
 3 – Teste de excluir a transação.
+
 4 – Teste da exibição da receita, despesa juntamente com a exibição do saldo.
+
 5 – Teste do gráfico de despesas e receitas
+
 6 – Teste de logout no sistema
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
@@ -519,7 +524,7 @@ O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona alg
 
 ## Registros de Testes
 
-Foram realizados alguns testes 
+Foram realizados alguns testes, testes de autenticacao, testes de criacao da tela de transcacoes, da implementacao de receiras, despesas e saldos
 
 > Discorra sobre os resultados do teste. Ressaltando pontos fortes e
 > fracos identificados na solução. Comente como o grupo pretende atacar
