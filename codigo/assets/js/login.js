@@ -7,6 +7,8 @@ var db_usuarios = {};
 // Objeto para o usuário corrente
 var usuarioCorrente = {};
 
+
+
 // função para gerar códigos randômicos a serem utilizados como código de usuário
 // Fonte: https://stackoverflow.com/questions/105034/how-to-create-guid-uuid
 function generateUUID() { // Public Domain/MIT
@@ -26,11 +28,11 @@ function generateUUID() { // Public Domain/MIT
 }
 
 
+
 // Dados de usuários para serem utilizados como carga inicial
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID(), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com" },
-        { "id": generateUUID(), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com" },
+
     ]
 };
 
@@ -93,6 +95,26 @@ function loginUser(login, senha) {
     return false;
 }
 
+
+
+/*function updateUser(id, nome, login, senha, email) {
+    // Localiza o indice do objeto a ser alterado no array a partir do seu ID
+    let index = db_usuarios.usuarios.findIndex(obj => obj.id).indexOf(id);
+
+    // Altera os dados do objeto no array
+    db_usuarios.usuarios[index].login = login.login,
+        db_usuarios.usuarios[index].nome = nome.nome,
+        db_usuarios.usuarios[index].email = email.email,
+        db_usuarios.usuarios[index].senha = senha.senha
+
+    // displayMessage("Usuario alterado com sucesso");
+
+    // Atualiza os dados no Local Storage
+    localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
+}*/
+
+
+
 // Apaga os dados do usuário corrente no sessionStorage
 function logoutUser() {
     usuarioCorrente = {};
@@ -104,6 +126,7 @@ function addUser(nome, login, senha, email) {
 
     // Cria um objeto de usuario para o novo usuario 
     let newId = generateUUID();
+
     let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email };
 
     // Inclui o novo usuario no banco de dados baseado em JSON
@@ -112,6 +135,20 @@ function addUser(nome, login, senha, email) {
     // Salva o novo banco de dados com o novo usuário no localStorage
     localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
 }
+
+/*function updateUser(id, nome, login, senha, email) {
+    // Localiza o indice do objeto a ser alterado no array a partir do seu ID
+    let index = db_usuarios.usuarios.findIndex(obj => obj.id).indexOf(id);
+
+    let usuario = { "id": index, "login": login, "senha": senha, "nome": nome, "email": email };
+
+    db_usuarios.usuarios.push(usuario);
+    // displayMessage("Usuario alterado com sucesso");
+
+    // Atualiza os dados no Local Storage
+    localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
+}*/
+
 
 function setUserPass() {
 
