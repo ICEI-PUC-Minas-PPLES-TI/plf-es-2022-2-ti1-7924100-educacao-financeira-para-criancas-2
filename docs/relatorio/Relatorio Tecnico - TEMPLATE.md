@@ -386,7 +386,7 @@ Enzo de Paiva Rezende (Designer)
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
 |Processo de Design Thinkgin  | Miro |  [https://miro.com/XXXXXXX](https://miro.com/app/board/uXjVPTfmQrc=/) | 
-|Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas2)|
+|Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas-2)|
 |Protótipo Interativo | Figma | [https://figma.com/XXXXXXX](https://www.figma.com/file/TR3Ub8AM5iDMJ9dmB91vb7/Educa%C3%A7%C3%A3o-Financeira-Atualizados?node-id=0%3A1&t=BznliJPvoQ2ZBQ2p-1) | 
 
 >
@@ -529,8 +529,12 @@ Foram realizados alguns testes
 
 # Referências
 
-Sites: [W3schol](https://www.w3schools.com/)
+Sites: 
+
+[W3schol](https://www.w3schools.com/)
+
 [Api - Alphavantage](https://www.alphavantage.co/)
+
 [Stackoverflow](https://stackoverflow.com/)
 
 > Inclua todas as referências (livros, artigos, sites, etc) utilizados
