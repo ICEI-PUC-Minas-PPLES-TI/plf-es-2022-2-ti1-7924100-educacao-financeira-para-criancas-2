@@ -197,14 +197,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permirtir que o usuario se cadastre no sistema | ALTA | 
-|RF-002| Permirtir que o usuario logue no sistema | ALTA |
-|RF-003| Permitir que um usuario realize transações |ALTA |
+|RF-001| Permitir que o usuário se cadastre no sistema | ALTA | 
+|RF-002| Permitir que o usuário logue no sistema | ALTA |
+|RF-003| Permitir que um usuário realize transações |ALTA |
 |RF-004| Visualizar lista de transações           | MÉDIA |
 |RF-005| Visualizar as receitas, as despesas e o saldo | MÉDIA |
-|RF-006| Visualizar grafico de transações           | MÉDIA |
+|RF-006| Visualizar gráfico de transações           | MÉDIA |
 |RF-008| Permitir trocar o tema da pagina (Escuro ou claro) | BAIXA |
-|RF-007| Permitir que o usuario vizualize as Informações de perfil | MÉDIA | 
+|RF-007| Permitir que o usuário visualize as Informações de perfil | MÉDIA | 
 |RF-008| Permitir visualizar ações | MÉDIA |
 |RF-009| Permitir que o usuário realize logout | ALTA |
 
@@ -212,10 +212,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móveis | MÉDIA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 7s |  BAIXA |
-|RNF-003| Deve ser facil de entender |  ALTA |
-|RNF-004| Facil usabilidade e acessibilidade |  ALTA |
+|RNF-003| Deve ser fácil de entender |  ALTA |
+|RNF-004| Fácil usabilidade e acessibilidade |  ALTA |
 
 > Com base nas Histórias de Usuário, enumere os requisitos da sua
 > solução. Classifique esses requisitos em dois grupos:
