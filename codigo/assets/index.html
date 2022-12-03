@@ -45,7 +45,10 @@
         // Informa o nome do usuário logado
         document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
 
+
     }
+
+
 
     // Associa ao evento de carga da página a função para verificar se o usuário está logado
     window.addEventListener('load', initPage);
@@ -63,7 +66,7 @@
                     <a href="dashboard.html">
                         <img src="img/logo.png" />
                     </a>
-                    <a href="dashboard.html">
+                    <a href="dashboard.html?id={id}">
                         <h3>FinanKids</h3>
                     </a>
                 </div>
@@ -74,15 +77,8 @@
 
             <!--Início do Menu Sidebar-->
 
-            <div class="sidebar">
-                <a href="acoes.html">
-                    <span class="material-icons">account_balance</span>
-                    <p>Ações</p>
-                </a>
-                <a href="#" id="btn_logout">
-                    <span class="material-icons">logout</span>
-                    <p>Sair</p>
-                </a>
+            <div class="sidebar" id="exibiPerfil">
+
             </div>
         </aside>
 
@@ -149,7 +145,7 @@
                                     <th>Nome do Lançamento</th>
                                     <th>Quantia</th>
                                     <th>Data</th>
-                                    <th>Situação</th>
+                                    <th>Ação</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -258,9 +254,25 @@
 
     <!--Fim do Botão de Novas Transações e Informações Sobre a Nova Transação-->
 
-
-
     <!--Bibliotecas Java Script-->
+
+    <script>
+        let destaquesID = document.getElementById("exibiPerfil")
+        destaquesID.innerHTML += `
+    <a href="perfil.html?id=${usuarioCorrente.id}">
+        <span class="material-icons">perm_identity</span>
+        <p>Perfil</p>
+    </a>
+    <a href="acoes.html">
+        <span class="material-icons">account_balance</span>
+        <p>Ações</p>
+    </a>
+    <a href="#" id="btn_logout">
+        <span class="material-icons">logout</span>
+        <p>Sair</p>
+    </a>
+    `
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
@@ -268,6 +280,7 @@
     <script src="./js/index.js"></script>
     <script src="./js/theme.js"></script>
     <script src="./js/menuAndModal.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

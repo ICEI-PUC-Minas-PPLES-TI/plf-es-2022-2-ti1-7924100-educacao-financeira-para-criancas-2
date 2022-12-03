@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/perfil.css">
+    <script src="js/login.js"></script>
+</head>
+<script>
+    if (!usuarioCorrente.login) {
+        window.location.href = LOGIN_URL;
+    }
+
+    window.addEventListener('load', initPage);
+</script>
+
+<body>
+
+
+    <form id="login-form" class="box">
+        <div id="formulario">
+
+        </div>
+    </form>
+
+
+    <script>
+        function exibeUser() {
+
+            let destaquesID = document.getElementById("formulario")
+            destaquesID.innerHTML += `
+            <h1>Informações do Perfil</h1>
+            <br>
+            <h3><strong>Usuario</strong></h3>
+            <input type="text" name="txt_login" id="txt_login" value = "${usuarioCorrente.login}">
+            <h3><strong>Nome</strong></h3>
+            <input type="text" name="txt_nome" id="txt_nome" value = "${usuarioCorrente.nome}">
+            <h3><strong>Email</strong></h3>
+            <input type="text" name="txt_email" id="txt_email" value = "${usuarioCorrente.email}">
+            <br>
+            <br>
+            
+            <a href="index.html">Tela Principal</a>
+    `
+        }
+
+
+        exibeUser()
+
+
+        function init() {
+            const urlParams = new URLSearchParams(location.search);
+            let idUser = parseInt(urlParams.get('id'))
+                // Intercepta o click do botão Alterar
+            event.preventDefault();
+            $("#btnUpdate").click(function() {
+                // Obtem os valores dos campos do formulário
+                // let campoId = $(idUser).val();
+
+                let nome = document.getElementById('txt_nome').value;
+                let login = document.getElementById('txt_login').value;
+                let senha = document.getElementById('txt_senha').value;
+                let email = document.getElementById('txt_email').value;
+
+                updateUser(toString(idUser), nome, login, senha, email);
+                alert("Usuario alterado");
+
+                exibeUser();
+            });
+        }
+
+        /*function init() {
+            const urlParams = new URLSearchParams(location.search);
+            let idUser = parseInt(urlParams.get('id'))
+                // Intercepta o click do botão Alterar
+            $("#btnUpdate").click(function() {
+                // Obtem os valores dos campos do formulário
+                let campoId = $(idUser).val();
+
+                let campoLogin = $("#txt_login").val();
+                let campoNome = $("#txt_nome").val();
+                let campoEmail = $("#txt_email").val();
+                let campoSenha = $("#txt_senha").val();
+                let user = {
+                    login: campoLogin,
+                    nome: campoNome,
+                    email: campoEmail,
+                    senha: campoSenha
+                };
+
+                updateUser(parseInt(campoId), user);
+
+                exibeUser();
+            });
+        }*/
+    </script>
+</body>
+
+<footer>
+    <p>FinaKids Project <a href="#"> LTDA</a></p>
+</footer>
+
+</html>
