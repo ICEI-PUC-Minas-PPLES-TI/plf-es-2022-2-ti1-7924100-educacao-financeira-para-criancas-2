@@ -333,7 +333,7 @@ Tela de ações
 
 Pedro Henrique Moreira Caixeta Ferreira - Cuidou da parte de documentação do github, wireframes, miro, parte de organização, tela de perfil e todo o resto
 
-Hugo Viana Tinoco - Cuidou dos Slides, judou na parte do design thinking, parte de organização
+Hugo Viana Tinoco - Cuidou dos Slides, ajudou na parte do design thinking, parte de organização
 
 Petrius Arturo Paglioni - Cuidou da parte de documentação, tela de ações
 
@@ -491,7 +491,7 @@ HOST - AWARDSPACE
 
 # Avaliação da Aplicação
 
-O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona algumas transações, o sistema existe o total de receitas, despesas e seu saldo juntamente com o gráfico. O usuário acessa a aba de pesquisas e tira algumas informações, depois finaliza de utilizar o software e realiza logout.
+O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona algumas transações, o sistema existe o total de receitas, despesas e seu saldo juntamente com o gráfico. O usuário acessa a aba de pesquisas e tira algumas informações, depois finaliza de utilizar o software e realizar logout.
 
 > Apresente os cenários de testes utilizados na realização dos testes da
 > sua aplicação. Escolha cenários de testes que demonstrem os requisitos
