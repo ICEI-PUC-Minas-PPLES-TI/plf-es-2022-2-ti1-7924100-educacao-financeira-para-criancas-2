@@ -43,7 +43,7 @@
         document.getElementById('btn_logout').addEventListener('click', logoutUser);
 
         // Informa o nome do usuário logado
-        document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+        document.getElementById('nomeUsuario').innerHTML = capitalizeFirstLetter("Bem vindo : " + usuarioCorrente.nome);
 
 
     }
@@ -211,7 +211,7 @@
                 </div>
                 <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
-                        <h2>Categoria</h2>
+                        <h2>Nome do Lançamento</h2>
                         <label class="sr-only" for="description">Tipo</label>
                         <input type="text" id="description" name="description" placeholder="Tipo de Categoria" />
                     </div>
