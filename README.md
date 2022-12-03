@@ -2,6 +2,8 @@
 # Nome do projeto
 O FinanKids veio com intuito de ajudar na organização de suas economias, assim proporcionando as crianças, adolescente e jovens a terá uma educação financeira logo cedo.
 
+SITE ALTERNATIVO HOSPEDADO: http://finankids.atwebpages.com/
+
 ## Alunos integrantes da equipe
 
 * Enzo de Paiva Rezende
