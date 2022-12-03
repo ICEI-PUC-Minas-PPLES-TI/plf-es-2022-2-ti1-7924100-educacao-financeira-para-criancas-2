@@ -33,5 +33,5 @@ PASSOS DE COMO USAR O SISTEMA INTERNO
 
 5 - Possibilidade de visualizar o perfil.
 
+6 - Possibilita acessar as principais ações.
 
-6 - Possibilita acessar as principais acoes.
