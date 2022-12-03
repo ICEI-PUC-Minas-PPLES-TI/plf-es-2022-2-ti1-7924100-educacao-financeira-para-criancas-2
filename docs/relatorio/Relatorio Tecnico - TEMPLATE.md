@@ -170,14 +170,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas entradas          | Colocar o que entra de dinheiro        |
-|Usuário do sistema  | Registrar meus gastos              | Controlar gastos                       |
-|Usuário do sistema  | Registrar categoria de gastos      | Listar cada categoria de gastos        |
-|Usuário do sistema  | Registrar um perfil                | Realizar o cadastro de login e senha   |
-|Usuário do sistema  | Alterar um perfil                  | Alterar os dados de login e senha      |
-|Usuário do sistema  | Registrar lancamentos              | Lancar os valores das receitas ou despesas|
-|Usuário do sistema  | Mercado de acoes                   | Visualizar o mercado de acoes          |
-|Usuário do sistema  | Noticias                           | Visualizar noticias sobre economia     |
+|Usuário do sistema  | Realizar o registro no sistema     | Salvar todos os dados no sistema       |
+|Usuário do sistema  | Realizar o login no sistema        | Entrar no sistema                      |
+|Usuário do sistema  | Registrar minhas transações        | Controlar transações (Entrada e saida) |
+|Usuário do sistema  | Visualizar Informações de perfil   | Visualizar meus dados                  |
+|Usuário do sistema  | Visualizar graficos, lista de transações | Ter controle dos gastos          |
+|Usuário do sistema  | Mercado de ações                   | Visualizar o mercado de acoes          |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 > Apresente aqui as histórias de usuário que são relevantes para o
@@ -195,22 +193,20 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
-### Requisitos Funcionais
+### Requisitos Funcionais - Atualizados após as sprints
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuario cadastre um perfil | ALTA | 
-|RF-002| Visualizar receitas e despesas            | MÉDIA |
-|RF-003| Permitir que o usuário cadastre categorias | ALTA | 
-|RF-004| Permitir que o usuário visualize categorias | MÉDIA |
-|RF-005| Permitir que o usuario cadastre uma categoria de lancamento | ALTA | 
-|RF-006| Permitir que o usuário visualize lancamentos   | MÉDIA |
-|RF-007| Permitir criar uma conta | ALTA | 
-|RF-008| Permitir visualizar acoes | MÉDIA |
-|RF-009| Permitir visualizar noticiais | MÉDIA |
-|RF-010| Permitir que o usuário visualize as contas | MÉDIA |
-|RF-011| Emitir graficos de gastos                 | MÉDIA |
-
+|RF-001| Permirtir que o usuario se cadastre no sistema | ALTA | 
+|RF-002| Permirtir que o usuario logue no sistema | ALTA |
+|RF-003| Permitir que um usuario realize transações |ALTA |
+|RF-004| Visualizar lista de transações           | MÉDIA |
+|RF-005| Visualizar as receitas, as despesas e o saldo | MÉDIA |
+|RF-006| Visualizar grafico de transações           | MÉDIA |
+|RF-008| Permitir trocar o tema da pagina (Escuro ou claro) | BAIXA |
+|RF-007| Permitir que o usuario vizualize as Informações de perfil | MÉDIA | 
+|RF-008| Permitir visualizar ações | MÉDIA |
+|RF-009| Permitir que o usuário realize logout | ALTA |
 
 ### Requisitos não Funcionais
 
@@ -271,17 +267,11 @@ Tela de Login
 
 Tela de Perfil
 
-Tela de menu
+Tela de Menu com gráficos e lista de transações
 
-Tela de categoria
+Aba de transações com todas as sprints unificadas
 
-Tela de lancamentos
-
-Tela de conta
-
-Tela de acoes
-
-Tela de noticias
+Tela de ações
 
 
 > Apresente as principais interfaces da solução. Discuta como 
@@ -314,19 +304,13 @@ Tela de noticias
 
 ![Tela de Login](images/login.png)
 
-![Tela de Perfil](images/perfil.png)
+![Tela de Perfil](images/tela_pergil.png)
 
-![Tela de menu](images/menu.png)
+![Tela de Menu com gráficos e lista de transações](images/tela_menu.png)
 
-![Tela de categoria](images/categoria.png)
+![Aba de transações com todas as sprints unificadas](images/tela_transicao.png)
 
-![Tela de lancamentos](images/lancamentos.png)
-
-![Tela de conta](images/conta.png)
-
-![Tela de acoes](images/acoes.png)
-
-![Tela de noticias](images/noticiais.png)
+![Tela de ações](images/tela_acoes.png)
 
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
@@ -403,7 +387,7 @@ Enzo de Paiva Rezende (Designer)
 |-----------|-------------------------|---------------|
 |Processo de Design Thinkgin  | Miro |  [https://miro.com/XXXXXXX](https://miro.com/app/board/uXjVPTfmQrc=/) | 
 |Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas2)|
-|Protótipo Interativo | Figma | [https://figma.com/XXXXXXX](https://www.figma.com/file/MLijQbElQhOrrk2fLrZyPj/Projeto-TIAW-Educa%C3%A7%C3%A3o-Financeira?node-id=0%3A1) | 
+|Protótipo Interativo | Figma | [https://figma.com/XXXXXXX](https://www.figma.com/file/TR3Ub8AM5iDMJ9dmB91vb7/Educa%C3%A7%C3%A3o-Financeira-Atualizados?node-id=0%3A1&t=BznliJPvoQ2ZBQ2p-1) | 
 
 >
 > Liste as ferramentas empregadas no desenvolvimento do
@@ -430,7 +414,7 @@ Enzo de Paiva Rezende (Designer)
 
 ## Controle de Versão
 
-Versao 1.0
+Versao Final
 
 > Discuta como a configuração do projeto foi feita na ferramenta de
 > versionamento escolhida. Exponha como a gerência de tags, merges,
@@ -470,7 +454,15 @@ Criar um sistema acessível para (crianças, jovens, adultos e educadores) possi
 
 ## Tecnologias Utilizadas
 
-......  COLOQUE AQUI O SEU TEXTO ......
+HTML
+CSS
+JAVASCRIPT
+JQUERY
+JSON
+API Ações - ALPHAVANTAGE
+VSCODE
+GO LIVE
+HOST - AWARDSPACE
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as
@@ -524,19 +516,10 @@ O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona alg
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 
-## Ferramentas de Testes (Opcional)
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
 
 ## Registros de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Foram realizados alguns testes 
 
 > Discorra sobre os resultados do teste. Ressaltando pontos fortes e
 > fracos identificados na solução. Comente como o grupo pretende atacar
@@ -546,7 +529,9 @@ O usuário entra no sistema, cria sua conta, ao acessar o site, ele adiciona alg
 
 # Referências
 
-Sites: [w3schol](https://www.w3schools.com/)
+Sites: [W3schol](https://www.w3schools.com/)
+[Api - Alphavantage](https://www.alphavantage.co/)
+[Stackoverflow](https://stackoverflow.com/)
 
 > Inclua todas as referências (livros, artigos, sites, etc) utilizados
 > no desenvolvimento do trabalho.
