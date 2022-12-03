@@ -3,50 +3,51 @@
 
 const MobileMenu = {
     open() {
-      document.querySelector("aside").classList.add("active");
+        document.querySelector("aside").classList.add("active");
     },
     close() {
-      document.querySelector("aside").classList.remove("active");
+        document.querySelector("aside").classList.remove("active");
     },
-  };
-  
-  const Modal = {
+};
+
+const Modal = {
     open() {
-      document.getElementById("modalOverlay").classList.add("active");
+        document.getElementById("modalOverlay").classList.add("active");
     },
     close() {
-      document.getElementById("modalOverlay").classList.remove("active");
-      Form.clearFields();
+        document.getElementById("modalOverlay").classList.remove("active");
+        Form.clearFields();
     },
-  };
-  
-
-  //Início do Display de Data
+};
 
 
-  let today = new Date();
-  let dd = String(today.getDate()).padStart(2, "0");
-  let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!;
-  let yyyy = today.getFullYear();
-  today = dd + "/" + mm + "/" + yyyy;
-  
-  let myDate;
-  function formatDate(str) {
+//Início do Display de Data
+
+
+let today = new Date();
+let dd = String(today.getDate()).padStart(2, "0");
+let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!;
+let yyyy = today.getFullYear();
+today = dd + "/" + mm + "/" + yyyy;
+
+let myDate;
+
+function formatDate(str) {
     var parts = str.split("/").map(Number);
     myDate = new Date("20" + parts[2], parts[1] - 1, parts[0]);
     return myDate.toLocaleString([], { month: "long" });
-  }
-  myDate = today;
-  const dateDisplay = formatDate(myDate.toString()) + ", " + dd;
-  
-  function capitalizeFirstLetter(string) {
+}
+myDate = today;
+const dateDisplay = formatDate(myDate.toString()) + ", " + dd + ", " + yyyy;
+
+function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-  
-  document.getElementById("date-display").innerHTML =
+}
+
+document.getElementById("date-display").innerHTML = " Bem vindo : " + usuarioCorrente.nome + "<br>" +
+    " Data: " +
     capitalizeFirstLetter(dateDisplay);
 
-    
+
 //Fim do Display de Data
 //Fim da Fonte da Data da Página do Menu Principal
-  
