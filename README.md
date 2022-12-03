@@ -1,6 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8492983&assignment_repo_type=AssignmentRepo)
 # Nome do projeto
-O FinanKids veio com intuito de ajudar na organização de suas economias, assim proporcionando as crianças, adolescente e jovens a terá uma educação financeira logo cedo.
+O FinanKids veio com intuito de ajudar as pessoas na organização de suas economias, assim proporcionando as crianças, adolescente e jovens a terá uma educação financeira logo cedo.
 
 SITE ALTERNATIVO HOSPEDADO: http://finankids.atwebpages.com/
 
