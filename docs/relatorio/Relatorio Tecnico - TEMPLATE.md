@@ -454,15 +454,23 @@ Criar um sistema acessível para (crianças, jovens, adultos e educadores) possi
 
 ## Tecnologias Utilizadas
 
-HTML
-CSS
-JAVASCRIPT
-JQUERY
-JSON
-API Ações - ALPHAVANTAGE
-VSCODE
-GO LIVE
-HOST - AWARDSPACE
+- HTML
+
+- CSS
+
+- JAVASCRIPT
+
+- JQUERY
+
+- JSON
+
+- API Ações - ALPHAVANTAGE
+
+- VSCODE
+
+- GO LIVE
+
+- HOST - AWARDSPACE
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as
