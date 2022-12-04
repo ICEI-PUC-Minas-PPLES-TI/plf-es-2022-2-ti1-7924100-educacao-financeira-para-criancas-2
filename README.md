@@ -2,7 +2,7 @@
 # Nome do projeto
 O FinanKids veio com intuito de ajudar as pessoas na organização de suas economias, assim proporcionando as crianças, adolescente e jovens a terá uma educação financeira logo cedo.
 
-SITE ALTERNATIVO HOSPEDADO: http://finankids.atwebpages.com/
+SITE ALTERNATIVO HOSPEDADO: http://finankids.atwebpages.com/ - Lembre-se de quando for acessar o site pela primeira vez, ele irá dar um aviso de site não seguro, neste caso, é só clicar em saiba mais e abrir mesmo assim, sem nenhum problema.
 
 ## Alunos integrantes da equipe
 
