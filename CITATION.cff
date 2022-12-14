@@ -1,31 +1,33 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: 07 - Educação financeira de crianças 2 (FinanKids)
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: de Paiva Rezende
+    given-names: Enzo
+  - family-names: Menezes Barbosa
+    given-names: Gustavo
+  - family-names: Viana Tinoco
+    given-names: Hugo
+  - family-names: Moreira Caixeta Ferreira
+    given-names: Pedro Henrique
+  - family-names: Arturo
+    given-names: Petrius
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Lara Soares
+    given-names: Felipe Augusto
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Dias Ferreira da Rocha
+    given-names: Roberto Felipe
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
 keywords:
-  - 
-  - 
-repository-code: 
+  - financeiro
+  - educação
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-educacao-financeira-para-criancas-2
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2022-12-14 
